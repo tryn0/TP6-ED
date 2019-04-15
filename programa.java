@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -12,10 +13,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
  
-public class pr extends Application
+public class programa extends Application
 {
     public static void main(String[] args)
     {
@@ -32,7 +34,7 @@ public class pr extends Application
         grid.setVgap(10);
         grid.setPadding(new Insets(25, 25, 25, 25));
 
-        Scene scene = new Scene(grid, 300, 275);
+        Scene scene = new Scene(grid, 400, 375);
         stage.setScene(scene);
 
         Text titulo = new Text("Bienvenido");
@@ -44,18 +46,21 @@ public class pr extends Application
 
         TextField texto = new TextField();
         grid.add(texto, 1, 1);
+        texto.setTooltip(new Tooltip("Escribe tu nombre"));
 
         Label ap = new Label("Apellidos:");
         grid.add(ap, 0, 2);
 
         TextField aptexto = new TextField();
         grid.add(aptexto, 1, 2);
+        aptexto.setTooltip(new Tooltip("Escribe tus apellidos"));
 
         Button boton = new Button("Aceptar");
         HBox hbBtn = new HBox(10);
         hbBtn.setAlignment(Pos.BOTTOM_LEFT);
         hbBtn.getChildren().add(boton);
         grid.add(hbBtn, 1, 4);
+        boton.setTooltip(new Tooltip("Aceptar y salir"));
 
         final Text accion = new Text();
         grid.add(accion, 1, 6);
@@ -64,7 +69,9 @@ public class pr extends Application
             @Override
             public void handle(ActionEvent e) {
                 accion.setFill(Color.FIREBRICK);
-                accion.setText("Boton Aceptar presionado.");
+                accion.setText("Mira la linea de comandos.");
+                System.out.println("Nombre: " + texto.getText()+" "+aptexto.getText());
+                Platform.exit();
             }
         });
     }

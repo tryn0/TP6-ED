@@ -7,7 +7,7 @@ Un código JavaFX simple para este trabajo, con múltiples commits, branchs con 
 Hará un programa JavaFX que introduzcas tu información y te la muestre por la línea de comandos donde ejecutaste el programa.
 
 ### Versión
-El branch 0.01 tiene el programa y commits del código de JavaFX de la versión 0.01x, título y cajas de texto para introducir nombre y apellidos con su correspondiente botón para aceptar, no hace nada más, queda por imprimir en pantalla o en el programa (en otra ventana o en la principal abajo o pasa a otra ventana) y alguna que otra mejora que se me vaya ocurriendo. Siguientes versiones.
+El branch 0.01 tiene el programa y commits del código de JavaFX de la versión 0.01x, título y cajas de texto para introducir nombre y apellidos con su correspondiente botón para aceptar, al pulsar este muestra en la línea de comandos nombre y apellidos que se han introducido, seguidamente cierra el programa.
 
 ### Información del repositorio
 Cuando pase a otra versión 0.01x -> 0.02x o 0.1x se creará otro branch distinto para diferenciar entre versiones.  
