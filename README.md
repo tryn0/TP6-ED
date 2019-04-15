@@ -4,7 +4,7 @@ Para empezar este trabajo práctico he pensado en hacer un simple programa de Ja
 
 ## Infomación del trabajo
 Un código JavaFX simple para este trabajo, con múltiples commits, branchs con ideas y tags.  
-Hará un programa JavaFX que introduzcas tu información y te la muestre por la línea de comandos donde ejecutaste el programa.
+Habrá un programa JavaFX que introduzcas tu información y te la muestre (varía el método según versión)
 
 ## Uso
 Para usar este programa solo tiene que introducir en la línea de comandos:  
