@@ -1,2 +1,7 @@
 # TP6-ED
-TP6 Entornos de Desarrollo
+TP6 de Entornos de Desarrollo  
+Para empezar este trabajo práctico he pensado en hacer un simple programa de JavaFX, ya que este trabajo se centra en los commits mediante comandos git, branch y tags.  
+
+## Infomación del trabajo
+Un código JavaFX simple para este trabajo, con múltiples commits, branchs con ideas y tags.  
+Hará un programa JavaFX que introduzcas tu información y te la muestre por la línea de comandos donde ejecutaste el programa.
